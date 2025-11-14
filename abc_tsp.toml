@@ -1,0 +1,15 @@
+[problem]
+cities = [
+  [0.0, 0.0],
+  [1.0, 0.0],
+  [1.0, 1.0],
+  [0.0, 1.0],
+  [0.5, 0.5],
+]
+metric = "euclidean"
+
+[abc]
+colony_size = 20
+max_cycles  = 300
+limit       = 80
+random_seed = 123
