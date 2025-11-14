@@ -1,0 +1,23 @@
+[problem]
+num_nurses = 5
+num_days   = 7
+num_shifts = 3
+demand = [
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [1, 1, 1],
+  [1, 1, 1],
+]
+
+max_consecutive_days = 5
+penalty_uncovered    = 10.0
+penalty_consecutive  = 1.0
+
+[abc]
+colony_size = 20
+max_cycles  = 300
+limit       = 80
+random_seed = 123
