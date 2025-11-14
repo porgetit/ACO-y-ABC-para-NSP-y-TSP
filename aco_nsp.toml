@@ -1,0 +1,27 @@
+[problem]
+num_nurses = 5
+num_days   = 7
+num_shifts = 3              # p.ej. mañana, tarde, noche
+# 7 filas (días) x 3 columnas (turnos) – demanda mínima de enfermeros
+demand = [
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [2, 2, 1],
+  [1, 1, 1],
+  [1, 1, 1],
+]
+
+max_consecutive_days = 5
+penalty_uncovered    = 10.0
+penalty_consecutive  = 1.0
+
+[aco]
+num_ants          = 30
+num_iterations    = 200
+alpha             = 1.0
+beta              = 0.0
+rho               = 0.1
+initial_pheromone = 1.0
+random_seed       = 123
